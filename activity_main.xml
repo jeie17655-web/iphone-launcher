@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_widget">
+
+        <TextClock
+            android:id="@+id/clockWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="none"
+            android:format24Hour="HH:mm"
+            android:textColor="@color/text_white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextClock
+            android:id="@+id/dateWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="none"
+            android:format24Hour="EEEE, d 'de' MMMM"
+            android:textColor="@color/text_white"
+            android:textSize="13sp"
+            android:alpha="0.8" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_widget"
+        android:hint="Buscar"
+        android:textColorHint="#99FFFFFF"
+        android:textColor="@color/text_white"
+        android:padding="12dp"
+        android:inputType="text"
+        android:imeOptions="actionSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/dock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:background="@drawable/bg_dock" />
+
+</LinearLayout>
