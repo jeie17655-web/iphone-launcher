@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dock_bg">#33FFFFFF</color>
+    <color name="widget_bg">#26FFFFFF</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="fallback_bg_top">#1A1145</color>
+    <color name="fallback_bg_bottom">#0A0E2E</color>
+</resources>
